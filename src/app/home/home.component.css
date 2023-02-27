@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.tophead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Lato", sans-serif;
+  width: 94%;
+  margin: auto;
+}
+.tophead .login, .tophead .ss-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.tophead .login .submit, .tophead .ss-icons .submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.tophead .login .submit i, .tophead .ss-icons .submit i {
+  color: #ff7100;
+}
+.tophead .login .submit span, .tophead .ss-icons .submit span {
+  color: #93A0A7;
+}/*# sourceMappingURL=home.component.css.map */
