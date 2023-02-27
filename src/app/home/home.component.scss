@@ -139,13 +139,13 @@
     background-size: cover;
 }
 
-.popular-dishes {
+.cards {
   background-color: #f8f7f2;
   padding: 100px 0px;
   width: 70%;
   margin: auto;
 
-  .pop-title {
+  .cards-header {
     display: flex;
     justify-content: space-between;
     padding-bottom: 15px;
@@ -170,7 +170,7 @@
     }
   }
 
-  .dishes {
+  .cards-info {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
     gap: 30px;

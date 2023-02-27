@@ -59,12 +59,12 @@
   </div>
 </div>
 
-<div class="popular-dishes">
-    <div class="pop-title">
+<div class="cards">
+    <div class="cards-header">
       <h4>Popular Dishes</h4>
       <button>View More<i class="bi bi-arrow-up-right-circle"></i></button>
     </div>
-  <div class="dishes">
+  <div class="cards-info">
     <div *ngFor="let dish of popularDishes">
       <app-halal-card [imgURL]="dish.imgURL" [type]="dish.type" [title]="dish.title"
         [desc]="dish.desc"></app-halal-card>
@@ -79,4 +79,17 @@
       <i class="fa-solid fa-bowl-food"></i>
     </button>
   </div>
+</div>
+
+<div class="cards">
+  <div class="cards-header">
+    <h4>Latest Recipes</h4>
+    <button>View More<i class="bi bi-arrow-up-right-circle"></i></button>
+  </div>
+<div class="cards-info">
+  <div *ngFor="let recipes of latestRecipes">
+    <app-halal-card [imgURL]="recipes.imgURL" [type]="recipes.type" [title]="recipes.title"
+      [desc]="recipes.desc"></app-halal-card>
+  </div>
+</div>
 </div>
