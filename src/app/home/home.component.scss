@@ -16,20 +16,20 @@
     font-family: 'Lato', sans-serif;
     width: 94%;
     margin: auto;
- 
+
     .ss-icons{
         color: #93A0A7;
         gap: 20px;
     }
     .login{
         gap: 20px;
-    } 
+    }
         .submit{
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 10px;
-            
+
             i{
                 color: #ff7100;
                 color: #F89223;
@@ -137,4 +137,42 @@
     background-image: url(/assets/images/popular.png);
     height: 700px;
     background-size: cover;
+}
+
+.popular-dishes {
+  background-color: #f8f7f2;
+  padding: 100px 0px;
+  width: 70%;
+  margin: auto;
+
+  .pop-title {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eaeae9;
+    font-family: 'Exo 2', sans-serif;
+
+    h4 {
+      font-size: 2vw;
+    }
+
+    button {
+      padding: 5px 20px;
+      border-radius: 5px;
+      border: none;
+      background-color: #d2721d;
+      color: #ffffff;
+
+      i {
+        padding-left: 8px;
+      }
+    }
+  }
+
+  .dishes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    gap: 30px;
+  }
 }

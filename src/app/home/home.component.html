@@ -1,39 +1,38 @@
-
-    <div class="tophead">
-       <div class="top">
-        <div class="ss-icons">
-          <span><i class="bi bi-facebook"></i></span>
-          <span><i class="bi bi-twitter"></i></span>
-          <span><i class="bi bi-instagram"></i></span>
-          <span><i class="bi bi-youtube"></i></span>
-      </div>
-      <div class="login">
-        <div class="submit">
-          <i class="fa-sharp fa-regular fa-file-lines"></i>
-          <span>Submit Recipe</span>
-        </div>
-        <div class="submit">
-          <i class="fa-regular fa-heart"></i>
-          <span>Saved Recipes</span>
-        </div>
-        <div class="submit">
-          <i class="fa-solid fa-arrow-right-to-bracket"></i>
-          <span>Login</span>
-        </div>
-      </div>
-       </div>
+<div class="tophead">
+  <div class="top">
+    <div class="ss-icons">
+      <span><i class="bi bi-facebook"></i></span>
+      <span><i class="bi bi-twitter"></i></span>
+      <span><i class="bi bi-instagram"></i></span>
+      <span><i class="bi bi-youtube"></i></span>
     </div>
-    <div class="menu">
-      <ul>
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Recipes List</li>
-        <img src="/assets/images/Group 7.svg" alt="" width="130px ">
-        <li>Religion Food</li>
-        <li>FAQ</li>
-        <li>Contact Us</li>
-      </ul>
+    <div class="login">
+      <div class="submit">
+        <i class="fa-sharp fa-regular fa-file-lines"></i>
+        <span>Submit Recipe</span>
+      </div>
+      <div class="submit">
+        <i class="fa-regular fa-heart"></i>
+        <span>Saved Recipes</span>
+      </div>
+      <div class="submit">
+        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        <span>Login</span>
+      </div>
     </div>
+  </div>
+</div>
+<div class="menu">
+  <ul>
+    <li>Home</li>
+    <li>About Us</li>
+    <li>Recipes List</li>
+    <img src="/assets/images/Group 7.svg" alt="" width="130px ">
+    <li>Religion Food</li>
+    <li>FAQ</li>
+    <li>Contact Us</li>
+  </ul>
+</div>
 <div class="banner">
   <div class="welcome">
     <h3>Welcome! to food faith fitness</h3>
@@ -50,11 +49,26 @@
     <span>who we are</span>
     <h4>One Thousand Flavors in one Place</h4>
     <p class="cont1">
-      Lorem ipsum dolor sit amet. Eum impedit eaque eum quae atque quo rerum debitis ut ullam incidunt et cumque libero ut cumque aspernatur. Sed dolor eaque et odio laudantium qui doloribus enim in consequuntur consequatur.
+      Lorem ipsum dolor sit amet. Eum impedit eaque eum quae atque quo rerum debitis ut ullam incidunt et cumque libero
+      ut cumque aspernatur. Sed dolor eaque et odio laudantium qui doloribus enim in consequuntur consequatur.
     </p>
     <p class="cont2">
-      Lorem ipsum dolor sit amet. Eum impedit eaque eum quae atque quo rerum debitis ut ullam incidunt et cumque libero ut cumque aspernatur. Sed dolor eaque et odio laudantium qui doloribus enim in consequuntur consequatur. 
+      Lorem ipsum dolor sit amet. Eum impedit eaque eum quae atque quo rerum debitis ut ullam incidunt et cumque libero
+      ut cumque aspernatur. Sed dolor eaque et odio laudantium qui doloribus enim in consequuntur consequatur.
     </p>
+  </div>
+</div>
+
+<div class="popular-dishes">
+    <div class="pop-title">
+      <h4>Popular Dishes</h4>
+      <button>View More<i class="bi bi-arrow-up-right-circle"></i></button>
+    </div>
+  <div class="dishes">
+    <div *ngFor="let dish of popularDishes">
+      <app-halal-card [imgURL]="dish.imgURL" [type]="dish.type" [title]="dish.title"
+        [desc]="dish.desc"></app-halal-card>
+    </div>
   </div>
 </div>
 

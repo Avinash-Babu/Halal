@@ -1,0 +1,49 @@
+.hal-card {
+    height: 100%;
+    width: 100%;
+    font-family: 'Exo 2', sans-serif;
+
+    .hal-img {
+      height: 200px;
+      border-radius: 10px;
+      background-size: cover !important;
+      margin: 0px 10px;
+    }
+}
+
+.hal-content {
+  height: 220px;
+  background-color: #ffffff;
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 0px 0px 5px 5px;
+
+  .type {
+    color: #d37e2c;
+    font-size: small;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+  }
+
+  .title {
+    font-size: larger;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  .rating {
+    font-size: 10px;
+    line-height: 30px;
+  }
+
+  .desc {
+    color: #7a7a7a;
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+.checked {
+  color: #e2cf3c;
+}
