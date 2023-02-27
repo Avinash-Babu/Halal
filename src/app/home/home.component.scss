@@ -1,35 +1,140 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+
+.login,.ss-icons,.menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+// ..............Topbar................
 .tophead{
+    padding: .5vw;
+    background-color: #f5f5f5;
+}
+.top{
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-family: 'Lato', sans-serif;
     width: 94%;
     margin: auto;
-    // font-family: 'Poppins', sans-serif;
-
-    .login,.ss-icons{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+ 
+    .ss-icons{
+        color: #93A0A7;
         gap: 20px;
-
+    }
+    .login{
+        gap: 20px;
+    } 
         .submit{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        
-        i{
-            color: #ff7100;
-        }
-        span{
-            color: #93A0A7;
-        }
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            
+            i{
+                color: #ff7100;
+                color: #F89223;
+            }
+            span{
+                color: #93A0A7;
+            }
         }
     }
+
+    // ..............Menu................
+.menu {
+   font-family: 'Poppins', sans-serif;
+    ul{
+        gap: 50px;
+
+        li{
+            list-style: none;
+            font-weight: 600;
+        }
+    }
+}
+
+
+// ..............Banner................
+
+.banner{
+    height: 740px;
+    position: relative;
+    z-index: -1;
+    transform: translateY(-35px);
+    background-image: url(/assets/images/banner.png);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .welcome{
+        height: 100%;
+        padding: 10rem;
+
+        h3{
+            font-family: 'Exo 2', sans-serif;
+            font-size: 3rem;
+            font-size: 4.5rem;
+            width: 25.4%;
+        }
+        button{
+            background-color: #F89223;
+            color: #f5f5f5;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            margin-top: 3rem;
+    }
+}
+}
+
+// ............whoweare.............
+
+.whoweare{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 70%;
+    margin: auto;
+    font-family: 'Exo 2', sans-serif;
+    .whoimg{
+        img{
+            border-radius: 10px;
+            width: 100%;
+        }
+    }
+    .whocont{
+        padding: 2rem;
+        span{
+            text-transform: uppercase;
+            color: #F89223;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+        h4{
+            font-size: 40px;
+            width: 75%;
+            margin-top: 1.5rem;
+        }
+        p{
+            width: 95%;
+            font-size: 16px;
+            letter-spacing: .1em;
+            margin-top: 1rem;
+            color: #253238;
+            font-family: 'Lato', sans-serif;
+            // text-align: justify;
+        }
+        .cont2{
+            margin-top: 1.5rem;
+        }
+    }
+}
+
+.popular{
+    background-color: #27231f;
+    width: 100%;
+    background-image: url(/assets/images/popular.png);
+    height: 700px;
+    background-size: cover;
 }
