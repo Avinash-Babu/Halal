@@ -60,10 +60,10 @@
 </div>
 
 <div class="cards">
-    <div class="cards-header">
-      <h4>Popular Dishes</h4>
-      <button>View More<i class="bi bi-arrow-up-right-circle"></i></button>
-    </div>
+  <div class="cards-header">
+    <h4>Popular Dishes</h4>
+    <button>View More<i class="bi bi-arrow-up-right-circle"></i></button>
+  </div>
   <div class="cards-info">
     <div *ngFor="let dish of popularDishes">
       <app-halal-card [imgURL]="dish.imgURL" [type]="dish.type" [title]="dish.title"
@@ -86,12 +86,12 @@
     <h4>Latest Recipes</h4>
     <button>View More<i class="bi bi-arrow-up-right-circle"></i></button>
   </div>
-<div class="cards-info">
-  <div *ngFor="let recipes of latestRecipes">
-    <app-halal-card [imgURL]="recipes.imgURL" [type]="recipes.type" [title]="recipes.title"
-      [desc]="recipes.desc"></app-halal-card>
+  <div class="cards-info">
+    <div *ngFor="let recipes of latestRecipes">
+      <app-halal-card [imgURL]="recipes.imgURL" [type]="recipes.type" [title]="recipes.title"
+        [desc]="recipes.desc"></app-halal-card>
+    </div>
   </div>
-</div>
 </div>
 
 
@@ -119,27 +119,6 @@
   </div>
 </div>
 
-<div style="width: 100%;">
-  <div class="banner-container">
-    <div class="card">
-      <div class="card-body">
-        <div class="header">
-          MESSAGE FROM FOUNDER
-        </div>
-        <div class="highlight-header">
-          First,we eat.Then,we do everything else.
-        </div>
-        <div class="body-content">
-          Lorem ipsum dolor sit amet. Ut quisquam voluptatem a voluptatum odit quo Quis Quis in totam inventore eos unde voluptate. Ut iure aperiam et possimus consequatur eos enim magnam. </div>
-        <div class="body-content">
-          Lorem ipsum dolor sit amet. Ut quisquam voluptatem a voluptatum odit quo Quis Quis in totam inventore eos unde voluptate. Ut iure aperiam et possimus consequatur eos enim magnam. </div>
-        <div class="signature">
-          <img src="../../assets/images/image_2023_02_27T12_14_34_276Z.png" alt="">
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 <div style="width: 100%; margin: 0;">
   <div class="testimonial-container">
     <div class="header">
@@ -151,7 +130,8 @@
     </div>
 
     <div class="sub-content">
-      Lorem ipsum dolor sit amet. Eum ipsum enim ea aliquam soluta sed vero optio rem suscipit corrupti et dolores neque. Et facilis voluptatem est porro ullam id nesciunt voluptatum
+      Lorem ipsum dolor sit amet. Eum ipsum enim ea aliquam soluta sed vero optio rem suscipit corrupti et dolores
+      neque. Et facilis voluptatem est porro ullam id nesciunt voluptatum
     </div>
 
     <div class="card-container">
@@ -162,7 +142,8 @@
           </div>
         </div>
         <div class="content">
-          Rem iste sunt est nemo voluptatem ut minus obcaecati. Ad culpa consequuntur et porro aliquid quo consectetur eaque. Hic laborum iusto aut neque voluptate ea facilis nesciunt et corrupti
+          Rem iste sunt est nemo voluptatem ut minus obcaecati. Ad culpa consequuntur et porro aliquid quo consectetur
+          eaque. Hic laborum iusto aut neque voluptate ea facilis nesciunt et corrupti
         </div>
         <div class="name">Poppy Francis</div>
         <div class="role">Student</div>
@@ -174,7 +155,8 @@
           </div>
         </div>
         <div class="content">
-          Rem iste sunt est nemo voluptatem ut minus obcaecati. Ad culpa consequuntur et porro aliquid quo consectetur eaque. Hic laborum iusto aut neque voluptate ea facilis nesciunt et corrupti
+          Rem iste sunt est nemo voluptatem ut minus obcaecati. Ad culpa consequuntur et porro aliquid quo consectetur
+          eaque. Hic laborum iusto aut neque voluptate ea facilis nesciunt et corrupti
         </div>
         <div class="name">Ethan Marshal</div>
         <div class="role">Student</div>
@@ -186,11 +168,48 @@
           </div>
         </div>
         <div class="content">
-          Rem iste sunt est nemo voluptatem ut minus obcaecati. Ad culpa consequuntur et porro aliquid quo consectetur eaque. Hic laborum iusto aut neque voluptate ea facilis nesciunt et corrupti
+          Rem iste sunt est nemo voluptatem ut minus obcaecati. Ad culpa consequuntur et porro aliquid quo consectetur
+          eaque. Hic laborum iusto aut neque voluptate ea facilis nesciunt et corrupti
         </div>
         <div class="name">Clarke</div>
         <div class="role">Student</div>
       </div>
+    </div>
+  </div>
+</div>
+
+<div style="width: 100%;">
+  <div class="banner-container">
+    <div class="card">
+      <div class="card-body">
+        <div class="header">
+          MESSAGE FROM FOUNDER
+        </div>
+        <div class="highlight-header">
+          First,we eat.Then,we do everything else.
+        </div>
+        <div class="body-content">
+          Lorem ipsum dolor sit amet. Ut quisquam voluptatem a voluptatum odit quo Quis Quis in totam inventore eos unde
+          voluptate. Ut iure aperiam et possimus consequatur eos enim magnam. </div>
+        <div class="body-content">
+          Lorem ipsum dolor sit amet. Ut quisquam voluptatem a voluptatum odit quo Quis Quis in totam inventore eos unde
+          voluptate. Ut iure aperiam et possimus consequatur eos enim magnam. </div>
+        <div class="signature">
+          <img src="../../assets/images/image_2023_02_27T12_14_34_276Z.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="cards">
+  <div class="cards-header flex-center">
+    <P>KEEP READING</P>
+    <h4>Latest article & news</h4>
+  </div>
+  <div class="cards-info">
+    <div *ngFor="let article of latestArticle">
+      <app-halal-card [imgURL]="article.imgURL" [heading]="article.heading" [date]="article.date"
+        [comments]="article.comments" [isArticle]="article?.isArticle"></app-halal-card>
     </div>
   </div>
 </div>

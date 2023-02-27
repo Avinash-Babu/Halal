@@ -11,6 +11,10 @@ export class HalalCardComponent implements OnInit {
   @Input() type: string = '';
   @Input() title: string = '';
   @Input() desc: string = '';
+  @Input() heading: string = '';
+  @Input() date: string = '';
+  @Input() comments: string = '';
+  @Input() isArticle: boolean | undefined = false;
 
   constructor() { }
 

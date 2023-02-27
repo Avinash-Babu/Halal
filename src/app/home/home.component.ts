@@ -86,6 +86,37 @@ export class HomeComponent implements OnInit {
       title: 'The Real Mojito',
       desc: 'Habitant accumsan suscipit sodales phasellus nulla elit placerat sapien quisque gravisa tincidunt'
     },
+  ];
+
+  latestArticle = [
+    {
+      imgURL: '/assets/images/Layer_26.png',
+      heading: 'How to Peel Hard Boiled Eggs Perfectlt, Every Single Time',
+      date: 'Apirl 9, 2022. ',
+      isArticle: true,
+      comments: ' No Comments'
+    },
+    {
+      imgURL: '/assets/images/Layer_21.png',
+      heading: 'Of Course Ina Garten\'s Ice Cream Hack Is Totally Brilliant',
+      date: 'Apirl 9, 2022. ',
+      isArticle: true,
+      comments: ' No Comments'
+    },
+    {
+      imgURL: '/assets/images/Layer_27.png',
+      heading: 'Passover Seder for $25? Totally Possible',
+      date: 'Apirl 9, 2022. ',
+      isArticle: true,
+      comments: ' No Comments'
+    },
+    {
+      imgURL: '/assets/images/Layer_22.png',
+      heading: 'Salad Freaks Unite-Our Cookbook Is Finally Here',
+      date: 'Apirl 9, 2022. ',
+      isArticle: true,
+      comments: ' No Comments'
+    }
   ]
 
   constructor() {

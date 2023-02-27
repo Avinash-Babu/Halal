@@ -170,6 +170,19 @@
     }
   }
 
+  .flex-center {
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      color: #d89359;
+      letter-spacing: 2px;
+      font-size: .8vw;
+      padding: 15px;
+      font-weight: 600;
+    }
+  }
+
   .cards-info {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(200px,1fr));

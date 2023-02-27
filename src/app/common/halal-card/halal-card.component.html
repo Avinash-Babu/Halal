@@ -1,6 +1,6 @@
 <div class="hal-card">
 <div class="hal-img" style="background: url({{imgURL}});"></div>
-<div class="hal-content">
+<div *ngIf="!isArticle" class="hal-content">
   <div class="type">{{type}}</div>
   <div class="title">{{title}}</div>
   <div class="rating">
@@ -11,5 +11,9 @@
     <span class="fa fa-star"></span>
   </div>
   <div class="desc">{{desc}}</div>
+</div>
+<div *ngIf="isArticle" class="hal-content h-100">
+  <div class="heading">{{heading}}</div>
+  <div class="date">{{date + comments}}</div>
 </div>
 </div>

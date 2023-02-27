@@ -9,6 +9,10 @@
       background-size: cover !important;
       margin: 0px 10px;
     }
+
+    .h-100 {
+      height: 100px !important;
+    }
 }
 
 .hal-content {
@@ -17,6 +21,20 @@
   margin-top: 5px;
   padding: 10px;
   border-radius: 0px 0px 5px 5px;
+
+  .heading {
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #49484f;
+    margin-bottom: 10px;
+  }
+
+  .date {
+    color: #d37e2c;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
 
   .type {
     color: #d37e2c;
