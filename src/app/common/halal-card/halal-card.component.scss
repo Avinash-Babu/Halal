@@ -1,13 +1,15 @@
 .hal-card {
     height: 100%;
     width: 100%;
+    border-radius: 10px;
+    padding: .5rem;
+    background-color: #fff;
     font-family: 'Exo 2', sans-serif;
 
     .hal-img {
       height: 200px;
       border-radius: 10px;
       background-size: cover !important;
-      margin: 0px 10px;
     }
 
     .h-100 {
@@ -17,10 +19,8 @@
 
 .hal-content {
   height: 220px;
-  background-color: #ffffff;
   margin-top: 5px;
   padding: 10px;
-  border-radius: 0px 0px 5px 5px;
 
   .heading {
     line-height: 20px;
@@ -41,7 +41,7 @@
     font-size: small;
     font-weight: 600;
     letter-spacing: 2px;
-    margin-bottom: 5px;
+    margin-bottom: .6rem;
   }
 
   .title {
@@ -51,13 +51,13 @@
   }
 
   .rating {
-    font-size: 10px;
+    font-size: .5rem;
     line-height: 30px;
   }
 
   .desc {
     color: #7a7a7a;
-    font-size: 12px;
+    font-size: .8rem;
     line-height: 20px;
   }
 }

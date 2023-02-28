@@ -1,0 +1,59 @@
+.hal-card {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  padding: 0.5rem;
+  background-color: #fff;
+  font-family: "Exo 2", sans-serif;
+}
+.hal-card .hal-img {
+  height: 200px;
+  border-radius: 10px;
+  background-size: cover !important;
+}
+.hal-card .h-100 {
+  height: 100px !important;
+}
+
+.hal-content {
+  height: 220px;
+  margin-top: 5px;
+  padding: 10px;
+}
+.hal-content .heading {
+  line-height: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #49484f;
+  margin-bottom: 10px;
+}
+.hal-content .date {
+  color: #d37e2c;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.hal-content .type {
+  color: #d37e2c;
+  font-size: small;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 0.6rem;
+}
+.hal-content .title {
+  font-size: larger;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.hal-content .rating {
+  font-size: 0.5rem;
+  line-height: 30px;
+}
+.hal-content .desc {
+  color: #7a7a7a;
+  font-size: 0.8rem;
+  line-height: 20px;
+}
+
+.checked {
+  color: #e2cf3c;
+}/*# sourceMappingURL=halal-card.component.css.map */

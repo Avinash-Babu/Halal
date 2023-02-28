@@ -119,10 +119,64 @@ export class HomeComponent implements OnInit {
     }
   ]
 
+public menubarBoolen: boolean = true
+
   constructor() {
    }
 
   ngOnInit(): void {
+   
+    this.windowEventListner(this.menubarBoolen)
   }
+
+  
+  //nav bar control --------------
+  public menuBar(){
+  
+    let menu: any = document.querySelector('.menu');
+    let child = menu.children;
+   let menuBars : any = document.querySelector('.dropdownmenu');
+    if( this.menubarBoolen ){
+      this.menubarBoolen = !this.menubarBoolen;
+      menuBars.style.height = "calc(100vh - 90px)";
+    menuBars.style.opacity = 1;
+      let windowWith = window.innerWidth
+     
+      if( windowWith > 600){
+        menuBars.style.top = '125px';
+      }else if(windowWith <= 600){
+        menuBars.style.top = "170px"
+      }
+    
+    }else{
+      this.menubarBoolen = !this.menubarBoolen;
+      menuBars.style.height = "0";
+      menuBars.style.opacity = 0;
+      menuBars.style.top = '-500px';
+     }
+
+    }
+
+
+    public menubarset(windowWith : any) {
+      
+    }
+    
+
+    public windowEventListner = ( menubarBoolen : boolean ) =>{
+      window.onresize = function(s){
+        let menuBars : any = document.querySelector('.dropdownmenu');
+        let windowWith = window.innerWidth
+        if( menubarBoolen ){
+        if(windowWith > 600){
+          menuBars.style.top = '125px';
+        }else if(windowWith <= 600){
+          menuBars.style.top = "170px"
+        }
+      }
+       
+        
+     }
+    }
 
 }
