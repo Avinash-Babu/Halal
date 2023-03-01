@@ -1225,6 +1225,11 @@
 }
 }
 @media(max-width:600px){
+    .hal-content{
+        .rating{
+            font-size: 1rem;
+        }
+    }
     .tophead{
         padding: 2vw;
 
@@ -1248,7 +1253,22 @@
             margin: 0;
         }
     }
+
+    .testimonial{
+        .testimonial-container{
+            .content{
+                font-size: 2rem;
+            }
+        }
+    }
     .popsection{
+        .popular{
+            .pop{
+                h3{
+                    font-size: 2rem;
+                }
+            }
+        }
         .popcircles{
             gap: 10px;
             .popcircleimg{
@@ -1257,7 +1277,33 @@
         }
    
     }
+    .benifits{
+        .benfits-cont{
+            h4{
+                font-size: 2rem !important;
+            }
+            .rightcont{
+                .money{
+                    .moneycont{
+                        .extramoney{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .update-form{
+        .input-container{
+            .inputs-form-container{
+                .header{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
     .Footer{
+        padding-top: 70px;
         .QuickAndCommunityDiv{
             display: grid;
             gap: 20px;
@@ -1294,4 +1340,5 @@
         }   
        
     }
+    
 }

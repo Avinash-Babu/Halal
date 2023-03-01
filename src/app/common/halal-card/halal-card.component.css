@@ -50,10 +50,16 @@
 }
 .hal-content .desc {
   color: #7a7a7a;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 20px;
 }
 
 .checked {
   color: #e2cf3c;
+}
+
+@media (max-width: 826px) {
+  .hal-content .rating {
+    font-size: 0.8rem;
+  }
 }/*# sourceMappingURL=halal-card.component.css.map */
