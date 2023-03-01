@@ -140,6 +140,7 @@ public menubarBoolen: boolean = true
       this.menubarBoolen = !this.menubarBoolen;
       menuBars.style.height = "calc(100vh - 90px)";
     menuBars.style.opacity = 1;
+    menuBars.style.zIndex = 99;
       let windowWith = window.innerWidth
      
       if( windowWith > 600){
@@ -152,15 +153,13 @@ public menubarBoolen: boolean = true
       this.menubarBoolen = !this.menubarBoolen;
       menuBars.style.height = "0";
       menuBars.style.opacity = 0;
+         menuBars.style.zIndex = -1;
       menuBars.style.top = '-500px';
      }
 
     }
 
 
-    public menubarset(windowWith : any) {
-      
-    }
     
 
     public windowEventListner = ( menubarBoolen : boolean ) =>{

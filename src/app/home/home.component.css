@@ -193,7 +193,7 @@
 }
 .whoweare .whocont span {
   text-transform: uppercase;
-  color: #F89223;
+  color: #d89359;
   letter-spacing: 1px;
   font-weight: 600;
 }
@@ -259,10 +259,10 @@
 }
 .cards .flex-center p {
   color: #d89359;
-  letter-spacing: 2px;
-  font-size: 0.8vw;
-  padding: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   font-weight: 600;
+  font-size: small;
 }
 .cards .cards-info {
   display: grid;
@@ -426,7 +426,7 @@
 }
 .testimonial .testimonial-container .header {
   text-transform: uppercase;
-  color: #F89223;
+  color: #d89359;
   letter-spacing: 1px;
   font-weight: 600;
   font-size: small;
@@ -588,7 +588,7 @@
 }
 .benifits .benfits-cont .topcont span {
   text-transform: uppercase;
-  color: #F89223;
+  color: #d89359;
   letter-spacing: 1px;
   font-weight: 600;
 }
@@ -661,7 +661,7 @@
   position: relative;
   width: 75%;
   margin: 150px auto auto auto;
-  padding: 75px 0 120px 0;
+  padding: 75px 0 180px 0;
   z-index: 0;
   font-family: "Exo 2", sans-serif;
 }
@@ -754,6 +754,13 @@
   width: 15px !important;
   height: 15px !important;
 }
+.Footer .QuickAndCommunityDiv div span .ssdiv {
+  gap: 20px;
+}
+.Footer .QuickAndCommunityDiv div span .ssdiv .followus {
+  gap: 15px;
+  align-items: baseline;
+}
 .Footer .QuickAndCommunityDiv div span .ss-icons {
   display: flex;
   flex-direction: row;
@@ -779,7 +786,7 @@
 }
 .Footer .QuickAndCommunityDiv div span button {
   width: 150px;
-  height: 50px;
+  padding: 12px;
   background: #F89223;
   border: none;
   outline: none;
@@ -797,11 +804,13 @@
   align-items: center;
   width: 100%;
   min-height: 70px;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .Footer .CopyRightAndPolicyDiv::after {
   content: "";
   width: 99vw;
-  height: 70px;
+  height: 100%;
   left: 50%;
   transform: translateX(-50%);
   position: absolute;
@@ -877,6 +886,22 @@
   .testimonial .testimonial-container .cardcontmain {
     overflow: auto;
     width: 90%;
+  }
+  .Footer {
+    width: 90%;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 0;
+  }
+  .Footer .FooterContent {
+    padding-right: 0;
+  }
+  .Footer .QuickAndCommunityDiv div {
+    flex-direction: unset;
+    align-items: unset;
+  }
+  .Footer .QuickAndCommunityDiv .connectDiv h5 {
+    margin: 0 !important;
   }
 }
 @media (max-width: 1024px) {
@@ -990,6 +1015,15 @@
   .testimonial .testimonial-container .sub-content {
     width: 85%;
   }
+  .Footer .CopyRightAndPolicyDiv {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .Footer .CopyRightAndPolicyDiv span:nth-child(2) {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 600px) {
   .tophead {
@@ -999,10 +1033,52 @@
     flex-direction: column;
     gap: 15px;
   }
+  .banner .welcome h3 {
+    font-size: 2.5rem;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
   .banner-container {
     justify-content: center;
   }
   .banner-container .card {
-    margin-left: 20%;
+    margin: 0;
+  }
+  .popsection .popcircles {
+    gap: 10px;
+  }
+  .popsection .popcircles .popcircleimg {
+    width: 20vw;
+  }
+  .Footer .QuickAndCommunityDiv {
+    display: grid;
+    gap: 20px;
+  }
+  .Footer .QuickAndCommunityDiv div {
+    width: 100%;
+  }
+  .Footer .QuickAndCommunityDiv div span {
+    width: 100%;
+    gap: 5px;
+  }
+  .Footer .QuickAndCommunityDiv div span h4 {
+    font-size: 18px;
+  }
+  .Footer .QuickAndCommunityDiv div span div {
+    flex-direction: unset;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .Footer .QuickAndCommunityDiv div span div a {
+    margin: 0;
+  }
+  .Footer .QuickAndCommunityDiv .connectDiv .ssdiv {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Footer .QuickAndCommunityDiv .connectDiv .ssdiv .followus {
+    width: -moz-fit-content;
+    width: fit-content;
+    display: grid;
   }
 }/*# sourceMappingURL=home.component.css.map */

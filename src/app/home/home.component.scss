@@ -229,7 +229,7 @@
 
         span {
             text-transform: uppercase;
-            color: #F89223;
+            color: #d89359;
             letter-spacing: 1px;
             font-weight: 600;
         }
@@ -304,11 +304,11 @@
     align-items: center;
 
     p {
-      color: #d89359;
-      letter-spacing: 2px;
-      font-size: .8vw;
-      padding: 15px;
-      font-weight: 600;
+        color: #d89359;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+        font-size: small;
     }
   }
 
@@ -494,7 +494,7 @@
       
         .header {
             text-transform: uppercase;
-            color: #F89223;
+            color: #d89359;
             letter-spacing: 1px;
             font-weight: 600;
             font-size: small;
@@ -683,7 +683,7 @@
         .topcont {
             span {
                 text-transform: uppercase;
-                color: #F89223;
+                color: #d89359;
                 letter-spacing: 1px;
                 font-weight: 600;
             }
@@ -773,7 +773,7 @@
     position: relative;
     width: 75%;
     margin: 150px auto auto auto;
-    padding: 75px 0 120px 0;
+    padding: 75px 0 180px 0;
     z-index: 0;
     font-family: 'Exo 2', sans-serif;
 
@@ -882,7 +882,14 @@
                         }
                     }
                 }
+                .ssdiv{
+                    gap: 20px;
 
+                    .followus{
+                        gap: 15px;
+                        align-items: baseline;
+                    }
+                }
                 .ss-icons {
                     display: flex;
                     flex-direction: row;
@@ -911,7 +918,7 @@
 
                 button {
                     width: 150px;
-                    height: 50px;
+                    padding: 12px;
                     background: #F89223;
                     border: none;
                     outline: none;
@@ -928,7 +935,7 @@
         &::after {
             content: "";
             width: 99vw;
-            height: 70px;
+            height: 100%;
             left: 50%;
             transform: translateX(-50%);
             position: absolute;
@@ -944,6 +951,7 @@
         align-items: center;
         width: 100%;
         min-height: 70px;
+        height: fit-content;
 
         span {
             cursor: pointer;
@@ -1038,6 +1046,28 @@
                     width: 90%;
                  
                 
+                }
+            }
+        }
+
+        .Footer{
+            width: 90%;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding-top: 0;
+            .FooterContent{
+                padding-right: 0;
+            }
+            .QuickAndCommunityDiv{
+                div{
+                    flex-direction: unset;
+                    align-items: unset;
+
+                }
+                .connectDiv{
+                    h5{
+                        margin: 0 !important;
+                    }
                 }
             }
         }
@@ -1180,6 +1210,19 @@
          }
         }
     }
+    .Footer{   
+        .CopyRightAndPolicyDiv{
+            flex-direction: column;
+            gap:10px;
+            span{
+                &:nth-child(2){
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+}
 }
 @media(max-width:600px){
     .tophead{
@@ -1190,10 +1233,65 @@
             gap: 15px;
         }
     }
+    .banner{
+        .welcome{
+            h3{
+                font-size: 2.5rem;
+                width: fit-content;
+            }
+        }
+    }
     .banner-container{
         justify-content: center;
         .card{
-            margin-left: 20%;
+            // margin-left: 20%;
+            margin: 0;
         }
+    }
+    .popsection{
+        .popcircles{
+            gap: 10px;
+            .popcircleimg{
+                width: 20vw;
+            }
+        }
+   
+    }
+    .Footer{
+        .QuickAndCommunityDiv{
+            display: grid;
+            gap: 20px;
+            div{
+               width: 100%;
+               span{
+                width: 100%;
+                gap: 5px;
+                h4{
+                    font-size: 18px;
+                }
+                div{
+                    flex-direction: unset;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    a{
+                        margin: 0;
+                    }
+                }
+               }
+            }
+
+            .connectDiv{
+                .ssdiv{
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .followus{
+                        width: fit-content;
+                        display: grid;
+                    }
+                }
+            }
+        }   
+       
     }
 }
